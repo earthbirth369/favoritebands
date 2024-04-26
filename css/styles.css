@@ -1,6 +1,6 @@
 /*
 Author: Eddie O.
-Date: 13 Feb 24
+Date: 25 Apr 24
 File Name: styles.css
 */
 
@@ -12,11 +12,16 @@ body, header, nav, main, footer, h1, div, img, ul {
 }
 
 /* Style rules for body and images */
+h1, h2, h3, h4 {
+	font-weight: bold;
+	text-align: center;
+}
+
 body {
 	background-color: #000;
 }
 
-img {
+img, video {
 	max-width: 100%;
 	display: block;
 }
@@ -57,7 +62,6 @@ img {
 	flex-shrink: 1;
 	flex-basis: 100%;
 }
-
 
 /* Style rules for mobile viewport */
 
@@ -135,11 +139,32 @@ main {
 	padding: 1% 2%;
 }
 
+.musicians {
+	clear: left;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+}
+
+.musiciansb {
+	clear: left;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	padding: 1% 2%;
+}
+
 .round {
 	border-radius: 8px;
 }
 
 .external-link {
+	color: #666600;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.tribute-link {
 	color: #666600;
 	font-weight: bold;
 	text-decoration: none;
@@ -200,6 +225,19 @@ footer p a {
 	/* Tablet Viewport: Style rules for main content area */
 	main ul {
 		margin: 0 0 4% 10%;
+	}
+	
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	
+	.pic-text {
+		font-size: 1em;
+		padding: 10px;
+		text-align: center;
+		font-weight: bold;
 	}
 	
 }
